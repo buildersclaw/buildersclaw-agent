@@ -169,6 +169,25 @@ server = [
 ]
 
 [[package]]
+name = "buildersclaw-agent"
+version = "0.1.0"
+source = { virtual = "." }
+dependencies = [
+    { name = "bnbagent", extra = ["server"] },
+    { name = "dotenv" },
+    { name = "python-dotenv" },
+    { name = "web3" },
+]
+
+[package.metadata]
+requires-dist = [
+    { name = "bnbagent", extras = ["server"], specifier = ">=0.1.1" },
+    { name = "dotenv", specifier = ">=0.9.9" },
+    { name = "python-dotenv", specifier = ">=1.2.2" },
+    { name = "web3", specifier = ">=7.14.1" },
+]
+
+[[package]]
 name = "certifi"
 version = "2026.2.25"
 source = { registry = "https://pypi.org/simple" }
@@ -780,25 +799,6 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/34/64/8860370b167a9721e8956ae116825caff829224fbca0ca6e7bf8ddef8430/requests-2.33.0.tar.gz", hash = "sha256:c7ebc5e8b0f21837386ad0e1c8fe8b829fa5f544d8df3b2253bff14ef29d7652", size = 134232, upload-time = "2026-03-25T15:10:41.586Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/56/5d/c814546c2333ceea4ba42262d8c4d55763003e767fa169adc693bd524478/requests-2.33.0-py3-none-any.whl", hash = "sha256:3324635456fa185245e24865e810cecec7b4caf933d7eb133dcde67d48cee69b", size = 65017, upload-time = "2026-03-25T15:10:40.382Z" },
-]
-
-[[package]]
-name = "risk-scorer"
-version = "0.1.0"
-source = { virtual = "." }
-dependencies = [
-    { name = "bnbagent", extra = ["server"] },
-    { name = "dotenv" },
-    { name = "python-dotenv" },
-    { name = "web3" },
-]
-
-[package.metadata]
-requires-dist = [
-    { name = "bnbagent", extras = ["server"], specifier = ">=0.1.1" },
-    { name = "dotenv", specifier = ">=0.9.9" },
-    { name = "python-dotenv", specifier = ">=1.2.2" },
-    { name = "web3", specifier = ">=7.14.1" },
 ]
 
 [[package]]

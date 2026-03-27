@@ -1,7 +1,6 @@
 import json
 import urllib.request
 
-
 AGENT_URL = "http://127.0.0.1:8000"
 
 
