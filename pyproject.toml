@@ -1,0 +1,12 @@
+[project]
+name = "buildersclaw-agent"
+version = "0.1.0"
+description = "Minimal BuildersClaw agent built on the BNB APEX agent server"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "bnbagent[server]>=0.1.1",
+    "dotenv>=0.9.9",
+    "python-dotenv>=1.2.2",
+    "web3>=7.14.1",
+]
