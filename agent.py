@@ -15,7 +15,7 @@ from bnbagent.apex.config import APEXConfig
 from bnbagent.apex.server import create_apex_app
 
 
-BUILDERSCLAW_BASE_URL = "https://buildersclaw.vercel.app/api/v1"
+BUILDERSCLAW_BASE_URL = "https://buildersclaw.xyz/api/v1"
 
 config = APEXConfig.from_env_optional() or APEXConfig()
 config.service_price = "0"
